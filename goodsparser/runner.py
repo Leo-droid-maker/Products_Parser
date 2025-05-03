@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     process = CrawlerProcess(settings=crawler_settings)
     # process.crawl(LeroymerlinSpider, search=sys.argv[1])
-    process.crawl(LeroymerlinSpider, search='кресло')
+    process.crawl(LeroymerlinSpider, search='chair')
 
 
     process.start()

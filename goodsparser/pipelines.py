@@ -26,7 +26,7 @@ class GoodsparserPipeline:
         try:
             collection.insert_one(item)
         except DuplicateKeyError:
-            print(f'Данный элемент уже есть в базе данных: {item["name"]}')
+            print(f'This item already exists in the database: {item["name"]}')
 
         return item
 

@@ -8,11 +8,11 @@ from Lesson_7_Selenium_in_Scrapy.goodsparser.items import GoodsparserItem
 
 class LeroymerlinSpider(scrapy.Spider):
     name = 'leroymerlin'
-    allowed_domains = ['leroymerlin.ru']
+    allowed_domains = ['leroymerlin.com']
 
     def __init__(self, search, **kwargs):
         super().__init__(**kwargs)
-        self.start_urls = [f'https://leroymerlin.ru/search/?q={search}']
+        self.start_urls = [f'https://leroymerlin.com/search/?q={search}']
 
     def parse(self, response: HtmlResponse):
 
